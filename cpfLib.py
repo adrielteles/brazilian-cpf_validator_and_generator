@@ -64,7 +64,7 @@ def cpfGenerator(quantity:int):
             segundo_digito = (resultado2*10) % 11
             segundo_digito = segundo_digito if segundo_digito <=9 else 0
 
-            result_cpf = f'{nove_digitos}{primeiro_digito}{segundo_digito}'
+            result_cpf = f'{nove_digitos[:3]}.{nove_digitos[3:6]}.{nove_digitos[6:]}-{primeiro_digito}{segundo_digito}'
             print(result_cpf)
     else:
         print('Invalid Quantity.')
