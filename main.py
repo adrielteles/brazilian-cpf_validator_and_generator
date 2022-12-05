@@ -26,6 +26,10 @@ while True:
             print('-'*25)
             num_cpf = input('How many CPF: ')
             cpfLib.cpfGenerator(num_cpf)
+        elif option == 3:
+            break
+        else:
+            print('Invalid Option')
     except ValueError:
         print('Invalid Option')
     except EOFError:
